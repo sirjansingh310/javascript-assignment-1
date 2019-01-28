@@ -1,4 +1,4 @@
-//return today's date in format compatible with input type = "date"
+//return today's date in format compatible with input[type = "date"] tag
 function getTodaysDate() {
     var d = new Date(),
         month = '' + (d.getMonth() + 1),
