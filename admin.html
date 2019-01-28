@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Boogaloo|Oswald|Courgette" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>Gallary Admin Portal</title>
+  <style>
+  body{
+  background-color:#e3e7ed;
+}
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class = "tab">HOME</a>
+
+  </nav>
+     <h2 style="margin-top:100px;"> GALLARY ADMIN</h2>
+  <div class="add-image">
+    <form>
+      <input required type="text" id="name" placeholder="Name"/>
+      <input required type="text" id="url" placeholder="Image URL"/>
+      <input required type="text" id="information" placeholder="Image Description"/>
+      <input required type = "date" id = "date" style="padding:7.5px; width:180px;">
+    	<input type="button" id="add-button" value="Add Image"/>
+    </form>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Select items to delete</th>
+        <th>Name</th>
+        <th>URL</th>
+        <th>Image</th>
+        <th>Description</th>
+        <th>Upload Date</th>
+      </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+  </table>
+  <button type="button" id = "delete-button">Delete Row</button>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script type="text/javascript" src = "admin-script.js"/>
+
+</script>
+  </body>
+</html>

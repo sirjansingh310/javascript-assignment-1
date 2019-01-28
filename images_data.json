@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "name": "scenery",
+      "url": "https://images.unsplash.com/photo-1476610182048-b716b8518aae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=827&q=80",
+      "information": "a scenery image",
+      "uploadDate": "2019-01-24"
+    },
+    {
+      "name": "drawing",
+      "url": "https://www.easy-drawings-and-sketches.com/images/xmy-drawing-scenery-21894444.jpg.pagespeed.ic.xvR3N7yt9v.jpg",
+      "information": "a drawing image",
+      "uploadDate": "2019-01-24"
+    }
+  ]
+}
