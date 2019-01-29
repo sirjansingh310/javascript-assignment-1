@@ -44,6 +44,10 @@ $("#add-button").click(function (){
    return;
   let information = $("#information").val();
   let uploadDate = $("#date").val();
+  if(name.length==0 || url.length == 0 || information.length == 0 || uploadDate.length == 0)
+   {
+     return;
+   }
   json.items.push({
     "name": name,
     "url": url,
