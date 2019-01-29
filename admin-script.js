@@ -72,7 +72,7 @@ $("#delete-button").click(function(){
   });
 
  // Edit values of row
-  $(".edit").click(function (){
+  $("table tbody").on("click",".edit",function (){
      let parent = $(this).closest('tr');
      $(this).hide();
      parent.find("button.save").show();
@@ -86,7 +86,7 @@ $("#delete-button").click(function(){
         $(this).attr("contenteditable","true");
       });
      // save changes to sessionStorage
-      $(".save").click(function(){
+      $("table tbody").on("click",".save",function(){
           let updatedValues = [];
           parent.children().each(function(){
             if($(this).find("input.record").length || $(this).find("button.edit").length || $(this).find("img").length)
