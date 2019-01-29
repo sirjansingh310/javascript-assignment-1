@@ -12,6 +12,7 @@ function getTodaysDate() {
 }
 // add value attribute to input[type = "date"]
 $("#date").attr("value",getTodaysDate());
+$("#date").attr("max",getTodaysDate());
 
 // validate urls using regular expressions
 function ValidURL(str) {
@@ -78,6 +79,7 @@ $("#delete-button").click(function(){
      let index = parent.index();
      let uploadDateInput = parent.find("input.upload-date");
      uploadDateInput.removeAttr("readonly");
+     uploadDateInput.attr("max",getTodaysDate());
      parent.children().each(function (){
         if($(this).find("input.record").length || $(this).find("button.edit").length || $(this).find("img").length)
            return;
