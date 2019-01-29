@@ -74,6 +74,7 @@ $("#delete-button").click(function(){
  // Edit values of row
   $("table tbody").on("click",".edit",function (){
      let parent = $(this).closest('tr');
+     let parentCopy = parent;
      $(this).hide();
      parent.find("button.save").show();
      let index = parent.index();
@@ -92,6 +93,13 @@ $("#delete-button").click(function(){
             if($(this).find("input.record").length || $(this).find("button.edit").length || $(this).find("img").length)
                return;
             else{
+              if($(this).html().length==0){
+                alert("Fields can't be left empty after editing");
+                $(this).closest("tr") = parentCopy;
+                $(this).hide();
+                $(this).parent().find("button.edit").show();
+                return;
+              }
               updatedValues.push($(this).html());
               $(this).attr("contenteditable","false");
             }
